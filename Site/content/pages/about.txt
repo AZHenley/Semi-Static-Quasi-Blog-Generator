@@ -1,0 +1,12 @@
+title: About
+date: 1/2/1
+
+My name is Austin Henley. I am a Ph.D. student researching software engineering. 
+
+ - My website: [AustinHenley.com](http://www.austinhenley.com)
+ - My Stack Overflow: &nbsp;&nbsp; <a href="http://stackexchange.com/users/903133">
+<img src="http://stackexchange.com/users/flair/903133.png" width="208" height="58" alt="profile for Austin Henley on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Austin Henley on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+</a>
+ - My Flash games (old): [BrokenMindGames.com](http://www.brokenmindgames.com)
+ 
+ 

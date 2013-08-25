@@ -1,0 +1,6 @@
+title: Home
+date: 1/1/1
+
+This website contains some of the small things that I code in an hour or two during "lunch breaks".
+
+Enjoy.

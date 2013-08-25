@@ -1,0 +1,21 @@
+title: Semi-Static Quasi-Blog Generator
+date: 8/17/2013
+
+**Problem:** I wanted a very simple way to create *this* website. I tried a few existing tools but they were slow ([Stacey](http://www.staceyapp.com/)), bloated ([WordPress](http://wordpress.org/)), overly complex, or had dependency issues ([Jekyll](http://jekyllrb.com/)). 
+
+**My solution:** A static, light-weight, flat-file content management system called *Semi-Static Quasi-Blog Generator*. I chose the name because I wanted the option to include *some* dynamic features and it isn't *exactly* a blog.
+
+**How it works:** It is a small C# application (133 LoC) that grabs two folders (pages, the items on the top that don't allow comments, and posts, the items on the left) of `.txt` files containing Markdown formatted text. Each file produces an associated `.html` file. There is a core HTML file called `frag.html` that is the basis. The generator simply injects the top navigation, left navigation, and page contents.
+
+**Instructions:** Run the application on a parent folder ("Site" in the example image) that contains folders called "output" and "content". Within content should be "pages" and "posts". Place your actual content here. The first two lines of your `.txt` markdown files should be `title:` and `date:`. Both pages and posts are sorted by date. You should have a page with the filename `index.txt`. After running the application, just push everything in "output" to your server!
+
+![folder structure](/images/ssqbg_structure.png)
+
+**Dependencies:** 
+
+ - [MarkdownSharp](https://code.google.com/p/markdownsharp/) as the [Markdown](http://daringfireball.net/projects/markdown/) processor.
+ - [Google Code Prettify](https://code.google.com/p/google-code-prettify/) for the syntax highlighting of code snippets that I post.
+ - [Twitter Bootstrap](http://getbootstrap.com/2.3.2/), hosted by [Bootstrap CDN](http://www.bootstrapcdn.com/?v=0813131), for the design template.
+ - [Disqus](http://disqus.com/) for the comments.
+ - [Google AdSense](http://google.com/adsense/) for advertisements.
+
