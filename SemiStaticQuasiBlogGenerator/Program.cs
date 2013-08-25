@@ -41,6 +41,7 @@ namespace SemiStaticQuasiBlogGenerator
             }
             pages.Sort((a, b) => DateTime.Parse(a.date).CompareTo(DateTime.Parse(b.date)));
             posts.Sort((a, b) => DateTime.Parse(a.date).CompareTo(DateTime.Parse(b.date)));
+            posts.Reverse(); //place newest at the top!
 
             //generate the common pieces of HTML
             string topHTML = GenerateTop(pages);
@@ -80,7 +81,7 @@ namespace SemiStaticQuasiBlogGenerator
             string leftHTML = "";
             foreach (Content post in posts)
             {
-                leftHTML += "<a href=\"" + post.fileName + "\">" + post.title + "</a>";
+                leftHTML += "<a href=\"" + post.fileName + "\">" + post.title + "</a><br>";
             }
 
             return leftHTML;
